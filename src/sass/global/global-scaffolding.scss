@@ -25,6 +25,7 @@ body {
 .wrapper {
   position: relative;
 
+  max-width: 1500px;
   min-height: 100%;
   height: auto !important;
   margin: 0 auto;
@@ -54,12 +55,18 @@ ul {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  margin-top: 0;
+  margin: 0;
   font-weight: normal;
 }
 
-a {
+.link {
+  color: #999;
   text-decoration: none;
+  transition: color 0.15s ease-out;
+
+  &:hover {
+    color: #998f8f;
+  }
 }
 
 img {
