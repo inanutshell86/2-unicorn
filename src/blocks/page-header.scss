@@ -1,0 +1,169 @@
+.page-header {
+  min-height: 1000px;
+
+  background-color: #f5f5f5;
+  background-image: url("../img/bg-header.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  .nav-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .logo__text {
+    display: block;
+    width: 72px;
+
+    @include source-sans-pro(bold);
+    font-size: $font-size-base;
+    line-height: $line-height-x-small;
+    color: $main-color;
+    text-transform: uppercase;
+  }
+
+  .main-nav {
+    display: flex;
+    flex-grow: 1;
+    justify-content: flex-end;
+
+    &__list {
+      position: relative;
+      display: flex;
+      align-items: flex-start;
+      flex-wrap: wrap;
+    }
+
+    &__item {
+      margin-left: 20px;
+    }
+
+    &__item--active {
+      position: relative;
+
+      &::before {
+        content: "";
+        position: absolute;
+        right: 0;
+        bottom: -3px;
+        left: 0;
+
+        height: 3px;
+
+        background: $main-color;
+      }
+    }
+
+    &__item a {
+      display: block;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      @include source-sans-pro(bold);
+      font-size: $font-size-small;
+      line-height: $line-height-x-small;
+      color: $main-color;
+      text-transform: uppercase;
+    }
+
+    &__item a[href] {
+      &:hover {
+        color: $hover-color;
+      }
+    }
+
+    &__toggle {
+
+      display: block;
+      width: 16px;
+      height: 52px;
+      padding: 0;
+      border: 0;
+      font-size: 0;
+      background: none;
+      cursor: pointer;
+
+      &::after {
+        content: "";
+        position: absolute;
+        top: 19px;
+        right: 0;
+        width: 16px;
+        height: 3px;
+        background-color: $main-color;
+        box-shadow: 0 6px 0 0 $main-color, 0 12px 0 0 $main-color;
+      }
+
+      &:hover::after {
+        background-color: $hover-color;
+        box-shadow:0 6px 0 0 $hover-color, 0 12px 0 0 $hover-color;
+      }
+    }
+  }
+
+  .banner-wrapper {
+    display: flex;
+    padding-top: 367px;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  &__wrapper {
+    @include container-fixed;
+    display: flex;
+    padding-top: 35px;
+    padding-bottom: 174px;
+
+    flex-flow: column wrap;
+  }
+
+  &__title {
+    @include source-sans-pro(black);
+    position: relative;
+    margin-bottom: 56px;
+    font-size: $font-size-xx-large;
+    font-weight: 900;
+    line-height: 72px;
+    color: $main-color;
+    text-transform: uppercase;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -22px;
+      right: 0;
+      width: 31%;
+      height: 4px;
+      background: #232323;
+    }
+  }
+
+  &__intro {
+    margin: 0;
+    width: 550px;
+    margin-bottom: 52px;
+    @include source-sans-pro;
+    font-size: $font-size-base;
+    line-height: $line-height-base;
+    color: $main-color;
+    text-align: right;
+  }
+
+  &__to-rest {
+    display: inline-block;
+    width: 273px;
+    height: 50px;
+    border: 2px solid #232323;
+    @include source-sans-pro(semibold);
+    font-size: $font-size-base;
+    line-height: 50px;
+    color: $main-color;
+    text-align: center;
+    text-decoration: none;
+
+    &:hover {
+      border-color: $hover-color;
+    }
+  }
+}
