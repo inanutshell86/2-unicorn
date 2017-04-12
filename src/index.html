@@ -31,24 +31,30 @@
   <div class="wrapper">
 
     <header class="page-header">
-      <h1 class="visually-hidden">The "Storyteller" company is the best service for anyone</h1>
-      <div class="page-header__logo">
-        <span class="page-header__text">unicorn</span>
-      </div>
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">Открыть меню</button>
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list">
-            <li class="main-nav__item  main-nav__item--active"><a>home</a></li>
-            <li class="main-nav__item"><a href="#">about</a></li>
-            <li class="main-nav__item"><a href="#">stories</a></li>
-            <li class="main-nav__item"><a href="#">hello</a></li>
-          </ul>
+      <div class="page-header__wrapper">
+        <div class="nav-wrapper">
+          <h1 class="visually-hidden">The "Storyteller" company is the best service for anyone</h1>
+          <div class="logo">
+            <a class="logo__text">unicorn</a>
+          </div>
+          <nav class="main-nav">
+            <div class="main-nav__wrapper">
+              <ul class="main-nav__list">
+                <li class="main-nav__item  main-nav__item--active"><a>home</a></li>
+                <li class="main-nav__item"><a class="main-nav__link  link" href="#">about</a></li>
+                <li class="main-nav__item"><a class="main-nav__link  link" href="#">stories</a></li>
+                <li class="main-nav__item"><a class="main-nav__link  link" href="#">hello</a></li>
+                <li class="main-nav__item"><button class="main-nav__toggle" type="button">Открыть меню</button></li>
+              </ul>
+            </div>
+          </nav>
         </div>
-      </nav>
-      <h2 class="page-header__title">stotyteller</h2>
-      <p class="page-header__intro">One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin. He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly domed and divided by arches into stiff sections.</p>
-      <a class="page-header__to-rest" href="/">read the rest</a>
+        <div class="banner-wrapper">
+          <h2 class="page-header__title">storyteller</h2>
+          <p class="page-header__intro">One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin. He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly domed and divided by arches into stiff sections.</p>
+          <a class="page-header__to-rest" href="#">read the rest</a>
+        </div>
+      </div>
     </header>
 
     <section class="advantages">
@@ -259,8 +265,7 @@
     </section>
 
   </div>
-  <footer class="page-footer">
-    <div class="page-footer__wrapper">
+     <div class="page-footer__wrapper">
       <div class="page-footer__primary">
         <div class="page-footer__form">
           <div class="page-footer__logo">
