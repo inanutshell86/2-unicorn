@@ -1,0 +1,12 @@
+@mixin container-fluid {
+  width: 78%;
+  margin: 0 auto;
+
+  // @include tablet {
+  //   width: 83.33333%;
+  // }
+  //
+  // @include mobile {
+  //   width: auto;
+  // }
+}
