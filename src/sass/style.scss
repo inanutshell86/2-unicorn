@@ -2,6 +2,10 @@
 @import "global/global-fonts";
 @import "global/normalize";
 @import "global/global-type";
-@import "global/global-scaffolding";
+@import "mixins/adaptive";
 @import "mixins/container-fixed";
+@import "mixins/container-fluid";
+@import "global/global-scaffolding";
 @import "../blocks/page-header";
+@import "../blocks/intro";
+@import "../bower/bower_components/css-hamburgers/_sass/hamburgers/hamburgers";
