@@ -1,0 +1,22 @@
+{
+  "name": "2-unicorn",
+  "description": "Учебный проект «Unicorn»",
+  "main": "gulpfile.js",
+  "authors": [
+    "Ihor Khrystiuk"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/inanutshell86/2-unicorn",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.2.1",
+    "css-hamburgers": "^0.8.1",
+    "jQuery.mmenu": "mmenu#^6.0.2"
+  }
+}
