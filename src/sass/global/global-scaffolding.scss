@@ -18,6 +18,7 @@ body {
   font-family: $base-font-family;
   font-size: $font-size-base;
   line-height: $line-height-base;
+  color: $main-color;
   -webkit-font-smoothing: antialiased;
   background-color: $body-color;
 }
@@ -25,7 +26,8 @@ body {
 .wrapper {
   position: relative;
 
-  max-width: 1500px;
+  // max-width: 1500px;
+  // min-width: 320px;
   min-height: 100%;
   height: auto !important;
   margin: 0 auto;
