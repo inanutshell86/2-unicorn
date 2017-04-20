@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Index</title>
+  <link rel="stylesheet" href="/bower/bower_components/jQuery.mmenu/dist/jquery.mmenu.all.css">
   <link rel="stylesheet" href="/css/style.css">
 
   <!-- Pixel Glass -->
@@ -44,7 +45,13 @@
                 <li class="main-nav__item"><a class="main-nav__link  link" href="#">about</a></li>
                 <li class="main-nav__item"><a class="main-nav__link  link" href="#">stories</a></li>
                 <li class="main-nav__item"><a class="main-nav__link  link" href="#">hello</a></li>
-                <li class="main-nav__item"><button class="main-nav__toggle" type="button">Открыть меню</button></li>
+              </ul>
+              <ul class="main-nav__icon-list">
+                <li class="main-nav__icon-item">
+                  <a class="hamburger  hamburger--emphatic" href="#mm-menu">
+                    <span class="hamburger-box"><span class="hamburger-inner"></span></span>
+                  </a>
+                </li>
               </ul>
             </div>
           </nav>
@@ -57,8 +64,8 @@
       </div>
     </header>
 
-    <section class="advantages">
-      <h2 class="advantages__title">Who & Why</h2>
+    <section class="intro">
+      <h2 class="intro__title">Who & Why</h2>
       <p>The gentlemen who rented the room would sometimes take their evening meal at home in the living room that was used by everyone, and so the door to this room was often kept closed in the evening. But Gregor found it easy to give up having the door open, he had, after all, often failed to make use of it when it was open and, without the family having noticed it, lain in his room in its darkest corner. One time, though, the charwoman left the door.</p>
     </section>
 
@@ -265,71 +272,85 @@
     </section>
 
   </div>
-     <div class="page-footer__wrapper">
-      <div class="page-footer__primary">
-        <div class="page-footer__form">
-          <div class="page-footer__logo">
-            <span class="page-footer__text">unicorn</span>
+
+  <footer class="page-footer">
+   <div class="page-footer__wrapper">
+    <div class="page-footer__primary">
+      <div class="page-footer__form">
+        <div class="page-footer__logo">
+          <span class="page-footer__text">unicorn</span>
+        </div>
+        <p>One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin. He lay on his</p>
+        <form class="feedback" action="#" method="post">
+          <div class="feedback__form">
+            <input class="feedback__field" type="email" name="email" placeholder="email">
+            <input class="feedback__field" type="text" name="subject" placeholder="subject">
+            <textarea class="feedback__field" name="message" placeholder="message"></textarea>
+            <button class="feedback__submit" type="submit">Send</button>
           </div>
-          <p>One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin. He lay on his</p>
-          <form class="feedback" action="#" method="post">
-            <div class="feedback__form">
-              <input class="feedback__field" type="email" name="email" placeholder="email">
-              <input class="feedback__field" type="text" name="subject" placeholder="subject">
-              <textarea class="feedback__field" name="message" placeholder="message"></textarea>
-              <button class="feedback__submit" type="submit">Send</button>
-            </div>
-          </form>
-        </div>
-        <div class="page-footer__links">
-          <ul class="link-list">
-            <li class="link-list__item"><a href="#">Home</a></li>
-            <li class="link-list__item"><a href="#">About</a></li>
-            <li class="link-list__item"><a href="#">Services</a></li>
-            <li class="link-list__item"><a href="#">Menu</a></li>
-            <li class="link-list__item"><a href="#">Restaurants</a></li>
-            <li class="link-list__item"><a href="#">Work Hours</a></li>
-            <li class="link-list__item"><a href="#">Call Hours</a></li>
-          </ul>
-        </div>
-        <div class="page-footer__friends">
-          <ul class="friends-list">
-            <li class="friends-list__item"><a href="#">Home</a></li>
-            <li class="friends-list__item"><a href="#">About</a></li>
-            <li class="friends-list__item"><a href="#">Services</a></li>
-            <li class="friends-list__item"><a href="#">Menu</a></li>
-            <li class="friends-list__item"><a href="#">Restaurants</a></li>
-          </ul>
-        </div>
-        <div class="page-footer__social">
-          <ul class="social-list">
-            <li class="social-list__item"><a href="#">Facebook</a></li>
-            <li class="social-list__item"><a href="#">Twitter</a></li>
-            <li class="social-list__item"><a href="#">Github</a></li>
-            <li class="social-list__item"><a href="#">Pinterest</a></li>
-            <li class="social-list__item"><a href="#">Google Plus</a></li>
-            <li class="social-list__item"><a href="#">Dribbble</a></li>
-            <li class="social-list__item"><a href="#">Flickr</a></li>
-            <li class="social-list__item"><a href="#">Others</a></li>
-          </ul>
-        </div>
+        </form>
       </div>
-      <div class="page-footer__secondary">
-        <div class="page-footer__copyright-text">
-          <p>One morning, when Gregor Samsa woke from troubled dreams, he found</p>
-          <b>© 2015 Your Awesome Company</b>
-        </div>
-        <div class="page-footer__copyright-list">
-          <ul class="copyright-items">
-            <li class="copyright-items__link"><a href="#">terms</a></li>
-            <li class="copyright-items__link"><a href="#">privacy policy</a></li>
-            <li class="copyright-items__link"><a href="#">contact</a></li>
-            <li class="copyright-items__link"><a href="#">job</a></li>
-          </ul>
-        </div>
+      <div class="page-footer__links">
+        <ul class="link-list">
+          <li class="link-list__item"><a href="#">Home</a></li>
+          <li class="link-list__item"><a href="#">About</a></li>
+          <li class="link-list__item"><a href="#">Services</a></li>
+          <li class="link-list__item"><a href="#">Menu</a></li>
+          <li class="link-list__item"><a href="#">Restaurants</a></li>
+          <li class="link-list__item"><a href="#">Work Hours</a></li>
+          <li class="link-list__item"><a href="#">Call Hours</a></li>
+        </ul>
+      </div>
+      <div class="page-footer__friends">
+        <ul class="friends-list">
+          <li class="friends-list__item"><a href="#">Home</a></li>
+          <li class="friends-list__item"><a href="#">About</a></li>
+          <li class="friends-list__item"><a href="#">Services</a></li>
+          <li class="friends-list__item"><a href="#">Menu</a></li>
+          <li class="friends-list__item"><a href="#">Restaurants</a></li>
+        </ul>
+      </div>
+      <div class="page-footer__social">
+        <ul class="social-list">
+          <li class="social-list__item"><a href="#">Facebook</a></li>
+          <li class="social-list__item"><a href="#">Twitter</a></li>
+          <li class="social-list__item"><a href="#">Github</a></li>
+          <li class="social-list__item"><a href="#">Pinterest</a></li>
+          <li class="social-list__item"><a href="#">Google Plus</a></li>
+          <li class="social-list__item"><a href="#">Dribbble</a></li>
+          <li class="social-list__item"><a href="#">Flickr</a></li>
+          <li class="social-list__item"><a href="#">Others</a></li>
+        </ul>
       </div>
     </div>
+    <div class="page-footer__secondary">
+      <div class="page-footer__copyright-text">
+        <p>One morning, when Gregor Samsa woke from troubled dreams, he found</p>
+        <b>© 2015 Your Awesome Company</b>
+      </div>
+      <div class="page-footer__copyright-list">
+        <ul class="copyright-items">
+          <li class="copyright-items__link"><a href="#">terms</a></li>
+          <li class="copyright-items__link"><a href="#">privacy policy</a></li>
+          <li class="copyright-items__link"><a href="#">contact</a></li>
+          <li class="copyright-items__link"><a href="#">job</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
   </footer>
+
+  <nav id="mm-menu">
+    <ul class="sidebar-nav__list">
+      <li class="sidebar-nav__item"><a class="sidebar-nav__link  link" href="#">Terms</a></li>
+      <li class="sidebar-nav__item"><a class="sidebar-nav__link  link" href="#">Privacy policy</a></li>
+      <li class="sidebar-nav__item"><a class="sidebar-nav__link  link" href="#">Contact</a></li>
+      <li class="sidebar-nav__item"><a class="sidebar-nav__link  link" href="#">Job</a></li>
+    </ul>
+  </nav>
+
+  <script src="/bower/bower_components/jquery/dist/jquery.min.js"></script>
+  <script src="/bower/bower_components/jQuery.mmenu/dist/jquery.mmenu.all.min.js"></script>
   <script src="/js/main.js"></script>
 </body>
 </html>
