@@ -1,4 +1,12 @@
 @mixin container-fixed {
   width: 1170px;
   margin: 0 auto;
+
+  @include tablet {
+    width: 640px;
+  }
+
+  @include mobile {
+    width: 320px;
+  }
 }
