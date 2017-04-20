@@ -1,0 +1,32 @@
+// .intro {
+//   padding: 100px 265px 144px;
+//   text-align: center;
+//   background-color: $white-color;
+//
+//   p {
+//     margin: 0;
+//     @include source-sans-pro;
+//     font-size: $font-size-small;
+//     line-height: $line-height-small;
+//   }
+//
+//   &__title {
+//     position: relative;
+//     padding-top: 53px;
+//     margin-bottom: 60px;
+//     @include source-sans-pro(bold);
+//     font-size: $font-size-x-large;
+//     line-height: $line-height-base;
+//
+//     &::before {
+//       content: "";
+//       position: absolute;
+//       top: 0;
+//       left: 50%;
+//       width: 39px;
+//       height: 39px;
+//       transform: translateX(-50%);
+//       background: url('../img/broccoli.png');
+//     }
+//   }
+// }
